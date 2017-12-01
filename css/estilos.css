@@ -1,0 +1,20 @@
+.navbar {
+	margin-bottom: 0
+}
+
+#jumbotron {
+	background: #27576B;
+	color:#fff;
+	padding: 20px 0;
+}
+
+#jumbotron #titleText1 {
+	font-style: italic;
+	margin-top: 8px;
+	font-size: 35px;
+}
+
+#jumbotron #titleText2 {
+	font-size: 15px;
+	margin-bottom: : 5px;
+}

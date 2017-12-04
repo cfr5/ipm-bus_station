@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang"es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width-device-width,user-scalable=no, initial-scale=1, maximun-scale=1,minimun-scale=1">
+	<title>Estacion de autobuses Madrid</title>
+	<link rel="shortcut icon" href="css/imagenes/icono.jpg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<!--Menu desplegable dispositivos moviles-->
+			<div class="container">
+				<div class="navbar-header">
+   					<button type="button" class="navbar-toggle" data-toggle="collapse"
+          			data-target=".menuPrincipal">
+      					<span class="sr-only"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="#">ESBM</a>
+    			</div>
+    			<!--Elementos del menu de navegacion-->
+				<div class="collapse navbar-collapse menuPrincipal">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="./inicio.html">Inicio</a></li>
+						<li class="dropbown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Horarios nacionales <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="./entradas_madrid.html">Entradas a Madrid</a></li>
+								<li><a href="#">Salidas de Madrid</a></li>
+							</ul>
+
+						</li>
+						<li><a href="./como_llegar.html">Como llegar</a></li>
+						<li><a href="./contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section id = "jumbotron">
+			<div class="container">
+				<h1 id = "titleText1"/>BUSES MADRID
+			   	<h2 id = "titleText2"/>Estacion sur de autobuses de Madrid
+			</div>
+		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>﻿
+	<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Contáctanos <small>Déjanos un mensaje</small></h1>
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-md-8">
+	            <div class="well well-sm">
+	                <form>
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label for="name">
+	                                Nombre</label>
+	                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="email">
+	                                Email</label>
+	                            <div class="input-group">
+	                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+	                                </span>
+	                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="subject">
+	                                Asunto</label>
+	                            <select id="subject" name="subject" class="form-control" required="required">
+	                                <option value="na" selected="">Escoje uno:</option>
+	                                <option value="service">Servicio general al cliente</option>
+	                                <option value="suggestions">Sugerencias</option>
+	                                <option value="product">Reclamaciones</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6">
+	                        <div class="form-group">
+	                            <label for="name">
+	                                Mensaje</label>
+	                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+	                                placeholder="Message"></textarea>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-12">
+	                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+	                            Enviar Mensaje</button>
+	                    </div>
+	                </div>
+	                </form>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	            <form>
+	            <legend><span class="glyphicon glyphicon-globe"></span> Nuestras oficinas </legend>
+	            <address>
+	                <strong>Estación Sur de Autobuses</strong><br>
+	                c/ Méndez Alvaro, 83<br>
+	                Madrid 28045<br>
+	                <abbr title="Phone">
+	                    Tlf:</abbr>
+	                914684200
+	            </address>
+	            <address>
+	                <strong>Email</strong><br>
+	                <a href="mailto:#">info@estaciondeautobuses.com</a>
+	            </address>
+	            </form>
+	        </div>
+	    </div>
+	</div>
+
+
+
+
+
+</body>
+</html>

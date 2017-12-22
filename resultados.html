@@ -8,140 +8,140 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	</head>
-	<body>
+</head>
+<body>
 	<header>
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			<!--Menu desplegable dispositivos moviles-->
 			<div class="container">
 				<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-								data-target=".menuPrincipal">
-								<span class="sr-only"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="./inicio.html">
-							<i class="material-icons">directions_bus</i>
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".menuPrincipal">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./inicio.html">
+					<i class="material-icons">directions_bus</i>
+				</a>
+			</div>
+			<!--Elementos del menu de navegacion-->
+			<div class="collapse navbar-collapse menuPrincipal">
+				<ul class="nav navbar-nav">
+					<li><a href="./inicio.html">Inicio</a></li>
+					<li class="dropbown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Horarios<span class="caret"></span>
 						</a>
-    			</div>
-    			<!--Elementos del menu de navegacion-->
-				<div class="collapse navbar-collapse menuPrincipal">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="./inicio.html">Inicio</a></li>
-						<li class="dropbown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Horarios<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="./entradas_madrid.html">Entradas a Madrid</a></li>
-								<li><a href="#">Salidas de Madrid</a></li>
-							</ul>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="./entradas_madrid.html">Entradas a Madrid</a></li>
+							<li><a href="#">Salidas de Madrid</a></li>
+						</ul>
 
-						</li>
+					</li>
 
-						<li><a href="./info_edificio.html">Vista Edificio</a></li>
-						<li><a href="./como_llegar.html">Como llegar</a></li>
-						<li><a href="./contacto.html">Contacto</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<section id = "jumbotron">
-			<div class="container">
-				<h1 id = "titleText1"/>BUSES MADRID
-			   	<h2 id = "titleText2"/>Estacion sur de autobuses de Madrid
-			</div>
-		</section>
-
-		<div class="container">
-			<div class="row">
-		        <div class="col-md-3">
-		            <form action="#" method="get">
-		                <div class="input-group">
-		                    <input class="form-control" id="system-search" name="q" placeholder="Buscar por" required>
-		                    <span class="input-group-btn">
-		                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-		                    </span>
-		                </div>
-		            </form>
-		        </div>
-				<div class="col-md-9">
-		    	 <table class="table table-list-search">
-		                    <thead>
-		                        <tr>
-		                            <th>Hora</th>
-		                            <th>Frecuencia</th>
-		                            <th>Empresa</th>
-		                            <th>Temporada</th>
-		                            <th>Tlf. Contacto</th>
-		                        </tr>
-		                    </thead>
-		                    <tbody>
-		                        <tr>
-		                            <td>00:30</td>
-		                            <td>MXJVS</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-														<tr>
-		                            <td>09:00</td>
-		                            <td>LMXJVS</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-														<tr>
-		                            <td>10:45</td>
-		                            <td>LMXJV</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-														<tr>
-		                            <td>15:45</td>
-		                            <td>V</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-														<tr>
-		                            <td>16:45</td>
-		                            <td>LMXJV</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-														<tr>
-		                            <td>17:45</td>
-		                            <td>LMXJV</td>
-		                            <td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
-		                            <td>01-09 al 31-12</td>
-		                            <td>902422242</td>
-		                        </tr>
-		                    </tbody>
-		                </table>
-				</div>
+					<li><a href="./info_edificio.html">Vista Edificio</a></li>
+					<li><a href="./como_llegar.html">Como llegar</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+				</ul>
 			</div>
 		</div>
+	</nav>
+</header>
+<section id = "jumbotron">
+	<div class="container">
+		<h1 id = "titleText1"/>BUSES MADRID
+		<h2 id = "titleText2"/>Estacion sur de autobuses de Madrid
+	</div>
+</section>
 
-
-
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
+<div class="container">
+	<div class="table-responsive">
+		<div class="col-md-3">
+			<form action="#" method="get">
+				<div class="input-group">
+					<input class="form-control" id="system-search" name="q" placeholder="Buscar por" required>
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+					</span>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-9">
+			<table class="table table-list-search">
+				<thead>
+					<tr>
+						<th>Hora</th>
+						<th>Frecuencia</th>
+						<th>Empresa</th>
+						<th>Temporada</th>
+						<th>Tlf. Contacto</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>00:30</td>
+						<td>MXJVS</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+					<tr>
+						<td>09:00</td>
+						<td>LMXJVS</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+					<tr>
+						<td>10:45</td>
+						<td>LMXJV</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+					<tr>
+						<td>15:45</td>
+						<td>V</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+					<tr>
+						<td>16:45</td>
+						<td>LMXJV</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+					<tr>
+						<td>17:45</td>
+						<td>LMXJV</td>
+						<td><a href="https://www.alsa.es">INTERCAR.S.A</a></td>
+						<td>01-09 al 31-12</td>
+						<td>902422242</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<a class="btn btn-success" href="javascript:window.history.back();">&laquo; Volver atrás</a>
+			</p>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
 				<h10>Copyright &copy; 2017</h10>
 				<p>Santiago Alvarez - Carlos Franco<p>
-				</div>
-				<div class="col-xs-6">
+			</div>
+			<div class="col-xs-6">
 				<h10>Todos los derechos reservados</h10>
-				</div>
 			</div>
 		</div>
 	</div>
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>﻿
 	<script src="js/resultados.js"></script>

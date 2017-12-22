@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang"es">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content ="width-device-width,user-scalable=no, initial-scale=1, maximun-scale=1,minimun-scale=1">
@@ -47,19 +47,15 @@
 		</nav>
 	</header>
 	<section id = "jumbotron">
-			<div class="container">
-				<h1 id = "titleText1"/>BUSES MADRID
-			   	<h2 id = "titleText2"/>Estacion sur de autobuses de Madrid
-			</div>
-		</section>
-
-
-
+		<div class="container">
+			<h1 id = "titleText1">BUSES MADRID</h1>
+			<h2 id = "titleText2">Estacion sur de autobuses de Madrid</h2>
+		</div>
+	</section>
 	<div class="container">
 	    <div class="row">
 			<div class="col-md-12">
 				<h3>Como llegar</h3>
-
 				<div class="tabbable-panel">
 					<div class="tabbable-line">
 						<ul class="nav nav-tabs ">
@@ -94,7 +90,20 @@
 								<p>
 									Desde el centro de Madrid llegar a la Estación de Atocha, en la Gta. del emperador Carlos V y seguir las indicaciones.
 								</p>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.611648561578!2d-3.6805965843260156!3d40.395298964866015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226148e6aaaab%3A0xf577a212e47e7777!2sEstaci%C3%B3n+Sur+de+Autobuses!5e0!3m2!1ses!2ses!4v1512415436660" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+								<div id="map"></div>
+						    <script>
+						      function initMap() {
+						        var uluru = {lat: 40.3952949, lng: -3.6789551};
+						        var map = new google.maps.Map(document.getElementById('map'), {
+						          zoom: 17,
+						          center: uluru
+						        });
+						        var marker = new google.maps.Marker({
+						          position: uluru,
+						          map: map
+						        });
+						      }
+						    </script>
 							</div>
 
 							<div class="tab-pane" id="tab_2">
@@ -135,25 +144,25 @@
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="tab2_1">
-												<img src="./css/imagenes/plano-bus-8.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-8.gif" class="img-responsive" alt="Plano del bus 8">
 											</div>
 											<div class="tab-pane" id="tab2_2">
-												<img src="./css/imagenes/plano-bus-37.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-37.gif" class="img-responsive" alt="Plano del bus 37">
 											</div>
 											<div class="tab-pane" id="tab2_3">
-												<img src="./css/imagenes/plano-bus-58.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-58.gif" class="img-responsive" alt="Plano del bus 58">
 											</div>
 											<div class="tab-pane" id="tab2_4">
-												<img src="./css/imagenes/plano-bus-102.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-102.gif" class="img-responsive" alt="Plano del bus 102">
 											</div>
 											<div class="tab-pane" id="tab2_5">
-												<img src="./css/imagenes/plano-bus-113.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-113.gif" class="img-responsive" alt="Plano del bus 113">
 											</div>
 											<div class="tab-pane" id="tab2_6">
-												<img src="./css/imagenes/plano-bus-148.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-148.gif" class="img-responsive" alt="Plano del bus 148">
 											</div>
 											<div class="tab-pane" id="tab2_7">
-												<img src="./css/imagenes/plano-bus-152.gif" class="img-responsive">
+												<img src="./css/imagenes/plano-bus-152.gif" class="img-responsive" alt="Plano del bus 152">
 											</div>
 										</div>
 									</div>
@@ -161,10 +170,10 @@
 							</div>
 
 							<div class="tab-pane" id="tab_3">
-								<img src="./css/imagenes/plano-metro.gif" class="img-responsive">
+								<img src="./css/imagenes/plano-metro.gif" class="img-responsive" alt="Plano del metro">
 							</div>
 							<div class="tab-pane" id="tab_4">
-								<img src="./css/imagenes/plano-tren.gif" class="img-responsive">
+								<img src="./css/imagenes/plano-tren.gif" class="img-responsive" alt="Plano del tren">
 							</div>
 						</div>
 					</div>
@@ -176,16 +185,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
-				<h10>Copyright &copy; 2017</h10>
-				<p>Santiago Alvarez - Carlos Franco<p>
+				<p>Copyright &copy; 2017</p>
+				<p>Santiago Alvarez - Carlos Franco</p>
 				</div>
 				<div class="col-xs-6">
-				<h10>Todos los derechos reservados</h10>
+				<p>Todos los derechos reservados</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>﻿
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFQ4pqcYAEzvCu8kWx2jOJ_VmLld53JaQ&callback=initMap" async defer></script>
 </body>
 </html>

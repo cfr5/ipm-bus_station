@@ -27,6 +27,20 @@
   background: #C1F96A;
 }
 
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+	margin-top: 10px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+	margin-bottom: 10px;
+}
+
 /* Tabs panel */
 .tabbable-panel {
   border:1px solid #eee;
@@ -84,6 +98,14 @@
 
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
+}
+
+
+#map{
+  height: 450px;
+	width: 75%;
+	margin: 0;
+	padding: 0;
 }
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang"es">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content ="width-device-width,user-scalable=no, initial-scale=1, maximun-scale=1,minimun-scale=1">
@@ -25,7 +25,7 @@
 						<a class="navbar-brand" href="./inicio.html">
 							<i class="material-icons">directions_bus</i>
 						</a>
-					</div>
+    			</div>
     			<!--Elementos del menu de navegacion-->
 				<div class="collapse navbar-collapse menuPrincipal">
 					<ul class="nav navbar-nav">
@@ -47,17 +47,17 @@
 		</nav>
 	</header>
 	<section id = "jumbotron">
-			<div class="container">
-				<h1 id = "titleText1"/>BUSES MADRID
-			   	<h2 id = "titleText2"/>Estacion sur de autobuses de Madrid
-			</div>
-		</section>
+		<div class="container">
+			<h1 id = "titleText1">BUSES MADRID</h1>
+			<h2 id = "titleText2">Estacion sur de autobuses de Madrid</h2>
+		</div>
+	</section>
 	<div class="jumbotron jumbotron-sm">
    		 <div class="container">
        		 <div class="row">
            		 <div class="col-sm-12 col-lg-12">
-               		 <h1 class="h1">
-                    	Contáctanos <small>Déjanos un mensaje</small></h1>
+               		 <h3 class="h3">
+                    	Contáctanos <small>Déjanos un mensaje</small></h3>
            		 </div>
        		 </div>
     	</div>
@@ -71,22 +71,22 @@
 	                    <div class="col-md-6">
 	                        <div class="form-group">
 	                            <label for="name">
-	                                Nombre</label>
-	                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+	                                Nombre*</label>
+	                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" aria-required="true"/>
 	                        </div>
 	                        <div class="form-group">
 	                            <label for="email">
-	                                Email</label>
+	                                Email*</label>
 	                            <div class="input-group">
 	                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
 	                                </span>
-	                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+	                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" aria-required="true" /></div>
 	                        </div>
 	                        <div class="form-group">
 	                            <label for="subject">
-	                                Asunto</label>
+	                                Asunto*</label>
 	                            <select id="subject" name="subject" class="form-control" required="required">
-	                                <option value="na" selected="">Escoje uno:</option>
+	                                <option value="">Escoje uno:</option>
 	                                <option value="service">Servicio general al cliente</option>
 	                                <option value="suggestions">Sugerencias</option>
 	                                <option value="product">Reclamaciones</option>
@@ -96,13 +96,13 @@
 	                    <div class="col-md-6">
 	                        <div class="form-group">
 	                            <label for="name">
-	                                Mensaje</label>
+	                                Mensaje*</label>
 	                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
 	                                placeholder="Message"></textarea>
 	                        </div>
 	                    </div>
 	                    <div class="col-md-12">
-	                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+	                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" value="Enviar Mensaje">
 	                            Enviar Mensaje</button>
 	                    </div>
 	                </div>
@@ -111,7 +111,7 @@
 	        </div>
 	        <div class="col-md-4">
 	            <form>
-	            <legend><span class="glyphicon glyphicon-globe"></span> Nuestras oficinas </legend>
+	            <p><span class="glyphicon glyphicon-globe"></span> Nuestras oficinas </p>
 	            <address>
 	                <strong>Estación Sur de Autobuses</strong><br>
 	                c/ Méndez Alvaro, 83<br>
@@ -132,11 +132,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
-				<h10>Copyright &copy; 2017</h10>
-				<p>Santiago Alvarez - Carlos Franco<p>
+				<p>Copyright &copy; 2017</p>
+				<p>Santiago Alvarez - Carlos Franco</p>
 				</div>
 				<div class="col-xs-6">
-				<h10>Todos los derechos reservados</h10>
+				<p>Todos los derechos reservados</p>
 				</div>
 			</div>
 		</div>

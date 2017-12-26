@@ -28,14 +28,14 @@
     			</div>
     			<!--Elementos del menu de navegacion-->
 				<div class="collapse navbar-collapse menuPrincipal">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav" role="navigation">
 						<li><a tabindex="0" href="./inicio.html">Inicio</a></li>
 						<li class="dropbown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Horarios<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="./entradas_madrid.html">Entradas a Madrid</a></li>
-								<li class="active"><a href="./salidas_madrid.html">Salidas de Madrid</a></li>
+								<li><a role="menu_item"href="./entradas_madrid.html">Entradas a Madrid</a></li>
+								<li class="active"><a role="menu_item" href="./salidas_madrid.html">Salidas de Madrid</a></li>
 							</ul>
 						</li>
 						<li><a href="./info_edificio.html">Vista Edificio</a></li>
@@ -46,8 +46,8 @@
 			</div>
 		</nav>
 	</header>
-	<section id = "jumbotron">
-		<div class="container">
+	<section id = "jumbotron" role="banner">
+		<div class="container" >
 			<h1 id = "titleText1">BUSES MADRID</h1>
 			<h2 id = "titleText2">Estacion sur de autobuses de Madrid</h2>
 		</div>
@@ -59,7 +59,7 @@
 				<h3>Salidas de Madrid</h3>
 				<div class="tabbable-panel">
 					<div class="tabbable-line">
-						<ul class="nav nav-tabs ">
+						<ul class="nav nav-tabs " role="navigation">
 							<li class="active">
 								<a href="#tab_1" data-toggle="tab">
 								Nacionales</a>

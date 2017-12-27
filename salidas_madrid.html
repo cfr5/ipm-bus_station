@@ -27,15 +27,15 @@
 						</a>
     			</div>
     			<!--Elementos del menu de navegacion-->
-				<div class="collapse navbar-collapse menuPrincipal">
-					<ul class="nav navbar-nav" role="navigation">
+				<div class="collapse navbar-collapse menuPrincipal" role="navigation">
+					<ul class="nav navbar-nav">
 						<li><a tabindex="0" href="./inicio.html">Inicio</a></li>
 						<li class="dropbown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Horarios<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a role="menu_item"href="./entradas_madrid.html">Entradas a Madrid</a></li>
-								<li class="active"><a role="menu_item" href="./salidas_madrid.html">Salidas de Madrid</a></li>
+								<li><a role="menuitem" href="./entradas_madrid.html">Entradas a Madrid</a></li>
+								<li class="active"><a role="menuitem" href="./salidas_madrid.html">Salidas de Madrid</a></li>
 							</ul>
 						</li>
 						<li><a href="./info_edificio.html">Vista Edificio</a></li>
@@ -57,9 +57,9 @@
 	    <div class="row">
 			<div class="col-md-12">
 				<h3>Salidas de Madrid</h3>
-				<div class="tabbable-panel">
+				<div class="tabbable-panel"  role="tabpanel">
 					<div class="tabbable-line">
-						<ul class="nav nav-tabs " role="navigation">
+						<ul class="nav nav-tabs ">
 							<li class="active">
 								<a href="#tab_1" data-toggle="tab">
 								Nacionales</a>
@@ -74,7 +74,7 @@
 								<p>
 									Provincia de destino:
 								</p>
-								<div class="dropdown-holder">
+								<div class="dropdown-holder" role="menu">
 									<div class="dropdown">
 									  <select class="btn btn-default btn-city dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 											<option>A Coruña</option>
@@ -87,7 +87,7 @@
 								<p>
 									Población de destino:
 								</p>
-								<div class="dropdown-holder">
+								<div class="dropdown-holder" role="menu">
 									<div class="dropdown">
 									  <select class="btn btn-default btn-city dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 											<option>A Coruña</option>
@@ -124,7 +124,7 @@
 								<p>
 									País de destino:
 								</p>
-								<div class="dropdown-holder">
+								<div class="dropdown-holder" role="menu">
 									<div class="dropdown">
 									  <select class="btn btn-default btn-city dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 											<option>Portugal</option>
@@ -137,7 +137,7 @@
 								<p>
 									Población de destino:
 								</p>
-								<div class="dropdown-holder">
+								<div class="dropdown-holder" role="menu">
 									<div class="dropdown">
 									  <select class="btn btn-default btn-city dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 											<option>Lisboa</option>
@@ -176,7 +176,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
+	<div id="footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
